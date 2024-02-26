@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> zoom in and zoom out</title>
+        <style>
+            div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            align-self: center;
+            position: relative;
+            top: 300px;
+            left: 300px;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            }
+            @keyframes example {
+            0%   {transform: scale(1);}
+            25%  {transform: scale(1.5);}
+            50%  {transform: scale(2);}
+            75%  {transform: scale(1.5);}
+            100% {transform: scale(1);}
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            lmao here is some text
+        </div>
+    </body>
