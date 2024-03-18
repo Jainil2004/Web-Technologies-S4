@@ -1,0 +1,38 @@
+<!-- Write a JavaScript program that displays the smallest integer among three integers.
+Write a JavaScript function that accepts a string as a parameter and converts the last letter of each word into lower case.
+Write a JavaScript program to create a simple unit converter (e.g., kilometers to miles).
+Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+Write a JavaScript program to find all multiples of 5 between 1 and 100.
+Write a JavaScript program to generate a random number between 1 and 100.
+Write a JavaScript Program to Print All Fibonacci Numbers up to a given number.
+Write a JavaScript program to populate a drop-down box with the names of the days of the week.
+Write a JavaScript function that accepts an array of integers as a parameter and returns the average of those integers.
+Write a JavaScript program that reverses a given string. -->
+
+<!doctype html>
+<html>
+    <head>
+        <title>cust JS ex1</title>
+        <script src="JavaScript/cust1_script.js"></script>
+    </head>
+    <body>
+        <form name="form1">
+            <p><input type="number" placeholder="num1" name="num1"></p>
+            <p><input type="number" placeholder="num2" name="num2"></p>
+            <p><input type="number" placeholder="num3" name="num3"></p>
+            <button onclick="check_smallest()">click for smallest number</button>
+            <p><input type="text" placeholder="enter a string" name="str1"></p>
+            <button onclick="last_letter_small()">all last letters small</button>
+            <button onclick="count_vowels()">count vowels in string</button>
+        </form>
+        <form name="form2">
+            <p><input type="number" placeholder="distance" name="distance"></p>
+            <select name="unit" id="dist_unit">
+                <option value="kilometers">kilometers</option>
+                <option value="miles">miles</option>
+            </select>
+            <button onclick="convert_to()">convert to corresponding unit</button>
+        </form>
+        <p id="result">result</p>
+    </body>
+</html>
